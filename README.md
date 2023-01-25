@@ -1,5 +1,4 @@
 # Carbmeter
-estimates the carbon footprint of a wallet or web3 protocol on Starknet L2 and Ethereum L1
 <div align="center">
   <h1>estimates the carbon footprint of a wallet or web3 protocol on Starknet L2 and Ethereum L1</h1>
   <img src="https://user-images.githubusercontent.com/25151724/214644164-61d5718b-fcf3-474e-9cdb-135836416e68.png" height="200">
