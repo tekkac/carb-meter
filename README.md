@@ -32,6 +32,10 @@ Carbmeter is designed to be easy to use and integrate into existing workflow, ma
 Our team is committed to promoting sustainability and reducing the environmental impact of the blockchain industry. By using Carbmeter, you can make informed decisions about your use of blockchain technology and take steps to reduce your carbon footprint.
 
 
+### Links
+- https://github.com/Offsetra/ethereum-emissions-calculator/
+- https://kylemcdonald.github.io/ethereum-emissions/
+
 ## Getting Started
 
 ### Prerequisites
