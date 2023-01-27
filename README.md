@@ -60,15 +60,14 @@ Reach out to the maintainer at one of the following places:
 
 ## Project assistance
 
-If you want to say **thank you** or/and support active development of Garaga:
+If you want to say **thank you** or/and support active development:
 
 - Add a [GitHub Star](https://github.com/carbonable-labs/carb-meter/issues/) to the
   project.
-- Tweet about the Garaga.
 - Write interesting articles about the project on [Dev.to](https://dev.to/),
   [Medium](https://medium.com/) or your personal blog.
 
-Together, we can make Garaga **better**!
+Together, we can make carb-meter **better**!
 
 ## Contributing
 
@@ -87,8 +86,8 @@ For a full list of all authors and contributors, see
 
 ## Security
 
-Garaga follows good practices of security, but 100% security cannot be assured.
-Garaga is provided **"as is"** without any **warranty**. Use at your own risk.
+Carb-meter follows good practices of security, but 100% security cannot be assured.
+Carb-meter is provided **"as is"** without any **warranty**. Use at your own risk.
 
 _For more information and to report security issues, please refer to our
 [security documentation](docs/SECURITY.md)._
