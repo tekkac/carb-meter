@@ -1,0 +1,17 @@
+{
+    "audio": {
+      "content": "Le spectacle NICERA de la Compagnie de Danse Contemporaine du même nom est une performance artistique qui invite le public à un voyage émotionnel mélancolique à la découverte de notre mémoire profonde et de nos origines. Les cinq interprètes, dirigées par la chorégraphe et directrice artistique Katia Lharaig, s'enchaînent avec brio et révérence en incarnant avec finesse et précision une exploration de l'émotion et de l'imagination dans des chorégraphies originales et audacieuses. Cette pièce, comme un hommage à la sagesse de nos aînés et à la mémoire corporelle inestimable, s'attache à valoriser l'enracinement au sol, la maîtrise de la dynamique et les qualités athlétiques des danseuses. 
+
+      Ce spectacle invite à un véritable dépaysement, libérant le public de la pesanteur et de la monotonie de la vie quotidienne. Chaque mouvement est soigneusement conçu et exécuté, faisant écho aux grâces de l'arbre et de ses racines qui symbolisent l'ancrage et la connexion à nos racines. Les danseuses, rayonnantes de vitalité et de passion, se fondent dans leurs mouvements avec une grâce naturelle pour créer une performance inoubliable, qui allie sagesse et liberté. 
+      
+      Le style unique et poétique de Katia Lharaig est une matière brute de créativité où chaque interprète est en définitif libre de s'exprimer pleinement, pour offrir à son public une performance vibrante et englobante. La mélodie qui court tout au long de la pièce suscite également un sentiment d'unité tout en offrant un cadre intemporel. Les danseuses, retenant le souffle du public, invitent à une immersion unique qui saura ravir tous les spectateurs. 
+      
+      En somme, le spectacle NICERA de la Compagnie de Danse Contemporaine est une représentation magique et immersive qui saura émerveiller et impressionner les spectateurs avec ses jeux d'émotions et ses créations poétiques sans limites."
+    },
+    "config": {
+      "enableAutomaticPunctuation": true,
+      "encoding": "LINEAR16",
+      "languageCode": "fr-FR",
+      "model": "default"
+    }
+  }
