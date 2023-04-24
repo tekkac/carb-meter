@@ -50,16 +50,24 @@ const Carbzmeter = () => {
       setApiOutput('Please enter a prompt');
       return;
     }
+
+//     GET  request sur
+// 'https://api-testnet.starkscan.co/api/v0/calls?from_block=0&contract_address=0x0253411b21eab322a75e3f3d5a6572e2071d5735fcc7f7120fa2d06212d002c5&limit=100'
+// headers:
+//      --header 'accept: application/json'
+//      --header 'x-api-key: WW3DmH4xrh7PHl0dq8LWi2B25ygFJHtzafsOsqVx'
     setIsGenerating(true);
-    const response = await fetch('/api/generate', {
-      method: 'POST',
+    const response = await fetch('https://api-testnet.starkscan.co/api/v0/calls?from_block=0&contract_address=0x0253411b21eab322a75e3f3d5a6572e2071d5735fcc7f7120fa2d06212d002c5&limit=100', {
+      method: 'GET',
       headers: {
-        'Content-Type': 'application/json',
+        'accept': 'application/json',
+        'x-api-key' : 'WW3DmH4xrh7PHl0dq8LWi2B25ygFJHtzafsOsqVx'
       },
-      body: JSON.stringify({ userInput }),
+      // body: JSON.stringify({ userInput }),
     });
     console.log("ouech", JSON.stringify({ userInput }))
     const data = await response.json();
+    console.log(data);
     const { output } = data;
     //console.log("OpenAI replied...", output.text)
 
