@@ -567,7 +567,7 @@ body {
   padding: 0px;
   position: relative;
   /* add bg image */
-  background-image: url('../public/assets/bg_carbzmeter.png');
+  background-image: url('/assets/bg_carbzmeter.png');
   /* add transparent background color */
   position: relative;
 

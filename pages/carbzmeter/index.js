@@ -9,7 +9,9 @@ import { useEffect, useState } from 'react';
 
 const Carbzmeter = () => {
   const [userInput, setUserInput] = useState('');
-  const [apiOutput, setApiOutput] = useState('')
+  const [apiOutput, setApiOutput] = useState('');
+  const [footprint, setfootprint] = useState('');
+  const [nbitems, setnbitems] = useState('');
 
  
 
@@ -72,7 +74,9 @@ const Carbzmeter = () => {
       // setapioutput with stringified data
       //setApiOutput(JSON.stringify(data, null, 2));
     
-      setApiOutput('Your footprint: ' + emissionRounded + ' kg of CO2 \n It represents ' + numberOfItems * 0.03 +  '\n You could compensate with Carbonable for ' + (emissionRounded * 19.5 /1000).toFixed(2) + '€');
+      setApiOutput('Your footprint: ' + emissionRounded + ' kg of CO2 \n It represents ' + numberOfItems * 0.03 +  'kWh  \n You could compensate with Carbonable for ' + (emissionRounded * 19.5 /1000).toFixed(2) + '€ \n \n The calculation of the electrical consumption of a laptop is based on 42kgEqCO2 over 1 year for 8h/day. It represents 150kW. (based on Ademe’ figures : https://bilans-ges.ademe.fr/documentation/UPLOAD_DOC_FR/index.htm?ordinateurs_et_equuipements_pe.htm= / https://ecotree.green/entreprises/blog/la-tonne-equivalent-co2-pour-mesurer-l-impact-carbone-de-son-activite)');
+      setfootprint(emissionRounded);
+      setnbitems(numberOfItems);
     } catch (error) {
       console.error('Error fetching data:', error);
       setApiOutput('Failed to fetch data');
@@ -104,11 +108,11 @@ const Carbzmeter = () => {
 
 
   return (
-    <div className="root" class="min-h-screen bg-cover bg-center bg-no-repeat" >
+    <div className="root" >
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Carbz Meter</h1>
+            <h1>Carbon Meter</h1>
           </div>
           <div className="header-subtitle">
             <h2>Mesure your CO2 footprint </h2>
@@ -141,7 +145,7 @@ const Carbzmeter = () => {
         </div>
 
            {/* output code */}
-           {apiOutput && (
+           {footprint && (
             <div className="output">
               <div className="output-header-container">
                 <div className="output-header">
@@ -150,6 +154,7 @@ const Carbzmeter = () => {
               </div>
               <div className="output-content">
                 <p>{apiOutput}</p>
+                <p className='text-xs'> The calculation of the electrical consumption of a laptop is based on 42kgEqCO2 over 1 year for 8h/day. It represents 150kW. (based on Ademe’ figures : https://bilans-ges.ademe.fr/documentation/UPLOAD_DOC_FR/index.htm?ordinateurs_et_equuipements_pe.htm= / https://ecotree.green/entreprises/blog/la-tonne-equivalent-co2-pour-mesurer-l-impact-carbone-de-son-activite)</p>
               </div>
             </div>
           )}
